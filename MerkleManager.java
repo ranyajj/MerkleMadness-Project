@@ -12,18 +12,15 @@ public class MerkleManager {
 
         }
 
-        MerkleThread merkle1 = new MerkleTread;
-        merkle1.threadName = "Merkle Thread";
+        MerkleThread merkle1 = new MerkleThread;
         Thread merkThread = new Thread(merkle1);
         merkThread.start();
 
         RogueThread rogue1 = new RogueThread;
-        rogue1.threadName = "Rogue Thread";
         Thread rThread = new Thread(rogue1);
         rThread.start();
 
         MonitorThread monitor1 = new MonitorThread;
-        monitor1.threadName = "Monitor Thread";
         Thread monThread = new Thread(monitor1);
         monThread.start();
 
